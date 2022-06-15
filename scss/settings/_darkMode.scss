@@ -1,0 +1,82 @@
+.dark-mode{
+    background: $black-knight !important;
+    color: white !important;
+}
+
+.light-mode{
+    background: white !important;
+    color: black !important;
+}
+
+//  En caso de tener configurado dark en tu PC
+@media (prefers-color-scheme: dark) {
+    body{
+        background: $black-knight;
+        color: white;
+        .container-footer{
+            background: $black-knight;
+        }
+        .container-nav{
+            background: $black-knight;
+            .container-brand{
+                .logo{
+                    a{
+                        color: white; 
+                    }
+                }
+                a{
+                    color: white; 
+                }
+            }
+            .dark-theme{
+                .container-login{
+                    #logIn{
+                        button{
+                            color: white;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .container-table{
+            .table{
+                color: white;
+            }
+        }
+        .container-modallogin{
+            .form-login{
+                background: $black-knight;
+                color: white;
+                input{
+                    background: $black-knight;
+                    color: white;
+                }
+            }
+        }
+        .container-modalbuy{
+            .form-buy{
+                background: $black-knight;
+                color: white;
+                input{
+                    background: $black-knight;
+                    color: white;
+                }
+            }
+        }
+        .container-modalsell{
+            .form-sell{
+                background: $black-knight;
+                color: white;
+                input{
+                    background: $black-knight;
+                    color: white;
+                }
+            }
+        }
+        .container-criptoexist{
+            background: $black-knight;
+        }
+    }
+}
+

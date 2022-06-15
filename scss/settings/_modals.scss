@@ -1,0 +1,163 @@
+.container-modallogin{
+    @include containerModals();
+    .close-btn{
+        color: #ccc;
+        float: right;  
+        font-size: 30px;
+        &:hover, &:focus{
+            color: black;
+        }
+    }
+    .form-login{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 87px 5px 0 0;
+        padding: 10px;
+        width: 300px;
+        background: white;
+        border-radius: 5px;
+        p{
+            font-size: 18px;
+            margin: 0;
+            padding-top: 12px;
+        }
+        input{
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+            outline: none;
+            border: 1px solid black;
+        }
+        .container-submit{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            input[type="submit"]{
+                @include btnDecentr(3px);
+                width: 40%;
+            }
+        }
+    }
+}
+
+.container-criptoexist{
+    display: none;
+    position: sticky;
+    bottom: 5px;
+    left: 10px;
+    width: 300px;
+    height: 40px;
+    background: white;
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+    padding: 0 8px;
+    .close-btn{
+                color: #ccc;
+                float: right;  
+                font-size: 30px;
+                height: 25px;
+                &:hover, &:focus{
+                    color: black;
+                }
+            }
+    p{
+        padding-top: 12px;
+        width: 290px;
+    }
+}
+
+.container-modalbuy{
+    @include containerModals();
+    .close-btn{
+        color: #ccc;
+        float: right;  
+        font-size: 30px;
+        &:hover, &:focus{
+            color: black;
+        }
+    }
+    .form-buy{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: 20% auto;
+        padding: 10px;
+        width: 300px;
+        background: white;
+        border-radius: 5px;
+        p{
+            font-size: 18px;
+            margin: 0;
+            padding-top: 12px;
+        }
+        input{
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+            outline: none;
+            border: 1px solid black;
+        }
+        .container-submit{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            input[type="submit"]{
+                @include btnDecentr(3px);
+                background: $light-green;
+                width: 40%;
+                &:hover{
+                    background: $sea-green;
+                }
+            }
+        }
+    }
+}
+
+.container-modalsell{
+    @include containerModals();
+    .close-btn{
+        color: #ccc;
+        float: right;  
+        font-size: 30px;
+        &:hover, &:focus{
+            color: black;
+        }
+    }
+    .form-sell{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: 20% auto;
+        padding: 10px;
+        width: 300px;
+        background: white;
+        border-radius: 5px;
+        p{
+            font-size: 18px;
+            margin: 0;
+            padding-top: 12px;
+        }
+        input{
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+            outline: none;
+            border: 1px solid black;
+        }
+        .container-submit{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            input[type="submit"]{
+                @include btnDecentr(3px);
+                background: $indian-red;
+                width: 40%;
+                &:hover{
+                    background: $fire-brick;
+                }
+            }
+        }
+    }
+}
